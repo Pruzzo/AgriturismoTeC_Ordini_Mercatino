@@ -7,7 +7,7 @@
  * @subpackage Himalayas
  * @since Himalayas 1.0
  */
-
+get_header(); 
  ?>
 
 
@@ -28,7 +28,7 @@ if ($validUser) { ?>
 <html>
 
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.2">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             .hover:hover {
                 cursor: pointer;
@@ -37,9 +37,7 @@ if ($validUser) { ?>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://www.agriturismoterraecielo.it/load/ordinimercatino/node_modules/moment/moment.js"></script>
         <script src="https://www.agriturismoterraecielo.it/load/ordinimercatino/node_modules/moment/locale/it.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
                 integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
                 crossorigin="anonymous"></script>
@@ -318,5 +316,6 @@ if ($validUser) { ?>
 }
 
 do_action('himalayas_after_body_content'); 
+get_footer();
 
 ?>
